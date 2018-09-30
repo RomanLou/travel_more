@@ -1,0 +1,32 @@
+.wwd {
+	background: $dgrey;
+	padding: 100px 0 115px;
+
+	&__list {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	&__item {
+		text-align: center;
+		font: 36px $font-sec;
+	}
+
+	&__icon {
+		font-size: 60px;
+		margin-bottom: 30px;
+		display: block;
+
+		&--red {
+			color: #FF6363;
+		}
+
+		&--blue {
+			color: #5474FD;
+		}
+
+		&--gayblue {
+			color: #00A2FF;
+		}
+	}
+}

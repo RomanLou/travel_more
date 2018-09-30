@@ -1,0 +1,34 @@
+.nav {
+	@include pos($b:0);
+	width: 100%;
+	background: $blue;
+
+	&__logo {
+		font-size: 24px;
+		font-weight: 700;
+		line-height: 80px;
+		text-transform: uppercase;
+		text-align: left;
+	}
+
+	&__list {
+		display: flex;
+		justify-content: flex-end;
+		height: 100%;
+
+		&-item {
+			@include size (15%, 100%);
+			cursor: pointer;
+			
+			&:hover {
+				background: $dblue;
+			}
+		}
+	}
+
+	&__link {
+		font: 14px/80px $font-sec;
+		text-transform: uppercase;
+	}
+	
+}

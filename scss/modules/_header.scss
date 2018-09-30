@@ -1,0 +1,119 @@
+.header {
+	@include size(100%, 100vh);
+	background: url(../images/heroimage.jpg) no-repeat top center;
+	background-size: cover;
+	text-align: center;
+	padding-top: 265px;
+	position: relative;
+
+	&__title {
+		font-size: 48px;
+		font-weight: 700;
+		letter-spacing: 10px;
+		text-transform: uppercase;
+		cursor: pointer;
+	}
+
+	&__text {
+		font-size: 22px;
+		margin: 15px 0 45px;
+		letter-spacing: 8px;
+	}
+
+	&__search{
+		@include size (650px, 60px);
+		display: flex;
+		margin: 0 auto;
+
+		&-input{
+			@include size (500px, 100%);
+			text-align: center;
+			position: relative;
+			color: $grey;
+			font: 14px $font-main;
+			letter-spacing: 2px;
+		}
+
+		&-button{
+		@include size (150px, 100%);
+			border: 2px solid #fff;
+			background: $blue;
+			margin-left: -6px;
+			cursor: pointer;
+			font: 14px/20px $font-sec;
+			color: #fff;
+			text-transform: uppercase;
+			letter-spacing: 1px;
+			position: relative;
+
+			&:hover{
+				background: $dblue;
+			}
+
+		}
+
+		&-img {
+			@include pos ($t: 20px, $r: 20px);
+			font-size: 20px;
+		}
+	}
+
+	&__scroll {
+		font-size: 14px;
+		letter-spacing: 2px;
+		margin-top: 115px;
+		transition: all 1.5s ease-in-out;
+		animation: scale 1.5s  infinite; 
+
+		&-icon {
+			font-size: 20px;
+		}
+	}
+
+	@keyframes scale {
+		0% {
+			transform: scale(1);
+		}
+
+		10% {
+			transform: scale(1.02);
+		}
+
+		20% {
+			transform: scale(1.04);
+		}
+
+		30% {
+			transform: scale(1.06);
+		}
+
+		40% {
+			transform: scale(1.08);
+		}
+
+		50% {
+			transform: scale(1.1);
+		}
+
+		60% {
+			transform: scale(1.08);
+		}
+
+		70% {
+			transform: scale(1.06);
+		}
+
+		80% {
+			transform: scale(1.04);
+		}
+
+		90% {
+			transform: scale(1.02);
+		}
+
+		100% {
+			transform: scale(1);
+		}
+	}
+}
+

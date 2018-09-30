@@ -1,0 +1,37 @@
+.footer {
+	background: $dgrey;
+	padding: 120px 0 50px;
+	text-align: center;
+
+	&__title {
+		font: 700 24px $font-main;
+		letter-spacing: 5px;
+		text-transform: uppercase;
+	}
+
+	&__subtitle {
+		margin: 15px 0 30px;
+		font-size: 16px;
+		letter-spacing: 1.5px;
+	}
+
+	&__list {
+		display: inline-flex;
+		
+		&-item {
+			font-size: 20px;
+			margin:0 11px;
+		}
+	}
+
+	&__link {
+		text-decoration: none;
+		color: #fff;
+
+		&--selected,
+		&:hover {
+			color: $blue;
+		}
+	}
+
+}

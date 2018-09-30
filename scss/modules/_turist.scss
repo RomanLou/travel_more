@@ -1,0 +1,50 @@
+.turist {
+	background: url(../images/turistbg.jpg) no-repeat top center;
+	background-size: cover;
+	padding: 120px 0 200px;
+
+
+	&__title {
+		font: 36px $font-sec;
+		margin-bottom: 100px;
+		text-align: center;
+	}
+
+	&__wrapper {
+		background: $dgrey;
+		display: flex;
+
+		&-text {
+			padding: 50px 60px;
+		}
+
+		&-img {
+			min-width: 40%;
+		}
+	}
+
+	&__img {
+		height: 100%;
+	}
+	
+	&__author {
+		font-size: 20px;
+		text-transform: uppercase;
+		margin-bottom: 35px;
+	}
+
+	&__icon {
+		font-size: 23px;
+		color: $blue;
+	}
+	
+	&__text {
+		
+		margin-top: -15px;
+
+		&:first-letter {
+		margin-left: 30px;
+		}	
+	}
+
+}

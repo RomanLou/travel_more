@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="description" content="Travel landing">
+	<meta name="author" content="Roma Lou">
+	<title>Travel More</title>
+
+	<link rel="icon" href="images/favicon.png">
+	<link href="https://fonts.googleapis.com/css?family=Josefin+Sans:400,700" rel="stylesheet">
+	<link rel="stylesheet" href="css/bootstrap-grid.min.css">
+	<link rel="stylesheet" href="css/styles.min.css">
+
+	<!--[if lt IE 9]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+</head>
+<body>
+	<header class="header">
+		<div class="container">
+			<h1 class="header__title">Bhromaon</h1>
+			<p class="header__text">Safe Travel Anywhere</p>
+			<form action="#" method="post" class="header__search">
+				<input class="header__search-input" required type="search" placeholder="Search Your Travel Destination"/>
+				<button class="header__search-button" type="submit">Search<i class="icon-search header__search-img"></i></button>
+			</form>
+			<div class="header__scroll">
+				<a class="link header__scroll-link" href="#navig">
+					<p class="header__scroll-text">Scroll Down</p>
+					<i class="icon-down header__scroll-icon"></i>
+				</a>
+			</div>
+		</div>
+		<nav class="nav" id="navig">
+			<div class="container">
+				<div class="row">
+					<div class="col-3">
+						<p class="nav__logo">Bhromaon</p>
+					</div>
+					<div class="col-9">
+						<ul class="nav__list">
+							<li class="nav__list-item">
+								<a href="#" class="link nav__link">Who We Are</a>
+							</li>
+							<li class="nav__list-item">
+								<a href="#whatwedo" class="link nav__link">What We Do</a>
+							</li>
+							<li class="nav__list-item">
+								<a href="#travewithus" class="link nav__link">Travel With Us</a>
+							</li>
+							<li class="nav__list-item">
+								<a href="#contactus" class="link nav__link">Contact Us</a>
+							</li>
+						</ul>
+					</div>
+				</div>				
+			</div>
+		</nav>
+	</header>
+	<section class="wwd" id="whatwedo">
+		<div class="container">
+			<ul class="wwd__list">
+				<li class="wwd__item"><i class="icon-search wwd__icon wwd__icon--blue"></i><p class="wwd__item-text">Search Places</p></li>
+				<li class="wwd__item"><i class="icon-check2 wwd__icon wwd__icon--red"></i><p class="wwd__item-text">Select Places</p></li>
+				<li class="wwd__item"><i class="icon-like wwd__icon wwd__icon--gayblue"></i><p class="wwd__item-text">Book & Enjoy</p></li>
+			</ul>
+		</div>
+	</section>
+	<section class="spain spain--home">
+		<div class="container">
+			<div class="spain__wrapper">
+				<p class="spain__subtitle">Spain</p>
+				<h3 class="spain__title" >Grand Spain Madrid</h3>
+				<p>But I must explain to you how all this mistaken idea of account to denouncing pleasure and praising pain was account  born and I account will give you a complete account of the system</p>
+				<a href="#" class="button">Book Now</a>
+			</div>
+		</div>
+	</section>
+	<section class="spain spain--sea">
+		<div class="container">
+			<div class="spain__wrapper">
+				<p class="spain__subtitle">Spain</p>
+				<h3 class="spain__title" >Grand Spain Madrid</h3>
+				<p>But I must explain to you how all this mistaken idea of account to denouncing pleasure and praising pain was account  born and I account will give you a complete account of the system</p>
+				<a href="#" class="button">Book Now</a>
+			</div>
+		</div>
+		</div>
+	</section>
+	<section class="turist" id="travewithus">
+		<div class="container">
+			<h1 class="turist__title">What Our Tourist Say</h1>
+			<div class="turist__wrapper">
+				<div class="turist__wrapper-img">
+					<img src="images/sam.jpg"  class="turist__img" alt="sam">
+				</div>
+				<div class="turist__wrapper-text">
+					<p class="turist__author">Sam Sumon</p>
+					<i class="icon-quote turist__icon"></i>
+					<p class="turist__text">But I must explain to you how all this mistaken idea of account to denouncinpleasure and praising pain  But I must explain to you how all this mistaken idea of account to nai denouncing pleasure and praising pain was account  born and I account will give you a complete account of the system was account  born and I account will give you a nai the complete account of the system</p>
+				</div>
+			</div>
+		</div>
+	</section>
+	<footer class="footer" id="contactus">
+		<div class="container footer__container">
+			<h2 class="footer__title">Bhromaon</h2>
+			<p class="footer__subtitle">Safe Travel Anywhere</p>
+			<ul class="footer__list">
+				<li class="footer__list-item"><a href="#" class="footer__link"><i class="icon-facebook"></i></a></li>
+				<li class="footer__list-item"><a href="#" class="footer__link"><i class="icon-twitter"></i></a></li>
+				<li class="footer__list-item"><a href="#" class="footer__link footer__link--selected"><i class="icon-linkedin"></i></a></li>
+				<li class="footer__list-item"><a href="#" class="footer__link"><i class="icon-youtube"></i></a></li>
+				<li class="footer__list-item"><a href="#" class="footer__link"><i class="icon-pinterest"></i></a></li>
+			</ul>
+		</div>
+	</footer>
+<!-- LiveReload Script -->
+<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+<script
+ src="https://code.jquery.com/jquery-3.3.1.min.js"
+ integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+ crossorigin="anonymous"></script>
+ <script>
+ 	$('a').click(function(){
+	    $('html, body').animate({
+	        scrollTop: $( $.attr(this, 'href') ).offset().top
+	    }, 500);
+	    return false;
+	});
+ </script>
+</body>
+</html>
